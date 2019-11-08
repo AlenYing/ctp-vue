@@ -3,7 +3,7 @@ import testmain from "./src/components/info"
 import Login from "./src/components/Login";
 import tabbar from "./src/components/tabbar";
 import skill from "./src/components/skill";
-
+import personlist from "./src/components/personlist";
 const routes = [
   {path: '/', component: Login},
   {
@@ -17,7 +17,12 @@ const routes = [
       {
         path: 'skill',
         component: skill
+      },
+      {
+        path:'personlist',
+        component: personlist
       }]
+
   }
 ]
 const router = new VueRouter({

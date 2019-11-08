@@ -49,13 +49,6 @@
         url('//at.alicdn.com/t/font_1280489_womsf1omoac.svg#iconfont') format('svg');
     }
 
-    h2 {
-        margin: 0;
-    }
-
-    div {
-        box-sizing: border-box;
-    }
 
     main {
         box-sizing: border-box;
@@ -79,13 +72,7 @@
         -webkit-user-select: text;
     }
 
-    .shadow {
-        box-shadow: 0 1vw 10vw -4vw rgba(0, 0, 0, .2);
-    }
 
-    .radius {
-        border-radius: 14px;
-    }
 
     .main-title {
         position: relative;

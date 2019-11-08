@@ -8,30 +8,31 @@
             <div class="skillblock">
                 <div class="main-info">对仿生人使用模块</div>
             </div>
-            <div v-for="name in personName"></div>
         </div>
+        <personlist v-if="show"></personlist>
     </div>
 </template>
-
 <script>
+  import personlist from "./personlist";
+
   export default {
     name: "skill",
+    components: {
+      "personlist": personlist
+    },
     data() {
       return {
         name: "",
         career: "",
-        personName:
-        [
-          {name:'ddd'},
-          {name:'sss'},
-          {name:'hhh'}
-        ]
+        show:false
       };
     },
     methods: {
       choosePerson: function () {
-          window.console.log(222);
-      }
+        window.console.log(222);
+          this.show = true;
+      },
+
     }
   };
 
@@ -79,14 +80,15 @@
         width: 60vw;
     }
 
-    .skillblock{
-        width:100%;
+    .skillblock {
+        width: 100%;
         margin: 2vh 2vh 0vh 0vh;
         height: 10vh;
-        background-color: rgba(3,3,3,0.6);
+        background-color: rgba(3, 3, 3, 0.6);
         text-align: center;
     }
-    .skillblock:hover{
+
+    .skillblock:hover {
         box-shadow: 5px 8px 10px black;
     }
 </style>
