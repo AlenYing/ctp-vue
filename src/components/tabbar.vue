@@ -1,12 +1,15 @@
 <template>
     <div>
-        <router-link to="/main/info">前往个人信息        </router-link>
-        <router-link to="/main/skill">前往技能页面       </router-link>
-<!--        <router-link to="personlist">正在開發頁面     </router-link>-->
-<!--        <router-link >正在開發頁面     </router-link>-->
         <transition name="fade" mode="out-in" appear>
             <router-view></router-view>
         </transition>
+        <div class="routerTabbar">
+            <div class="gobutton" @click="go('info')"></div>
+            <div class="gobutton" @click="go('skill')"></div>
+            <div class="gobutton" @click="go('')"></div>
+            <div class="gobutton" @click="go('')"></div>
+
+        </div>
     </div>
 </template>
 
@@ -16,11 +19,40 @@
     name: "tabbar",
     data() {
 
+    },
+    methods: {
+      go: function (detail) {
+        if (this.$route.path != `/main/${detail}`)
+        // window.console.log(this.$route.path);
+          this.$router.push(`/main/${detail}`)
+      }
     }
   }
 </script>
 <style scoped>
-    router-link {
+    .routerTabbar {
+        /*outline: 1px solid red;*/
+        position: fixed;
+        bottom: 2vh;
+        height: 8vh;
+        width: 80%;
+        padding: 1vh 2vh 1vh 2vh;
+        left:10vw;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
 
+    .gobutton {
+        width:7vh;
+        height:7vh;
+        border-radius: 50%;
+        /*background-image: linear-gradient( 135deg, #52E5E7 10%, #130CB7 100%);*/
+        background-color: #1819b0;
+    }
+
+    .gobutton:nth-child(1)
+    {
+        margin-left: unset;
     }
 </style>

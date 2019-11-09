@@ -41,3 +41,20 @@ ul {
 .radius {
   border-radius: 14px;
 }
+@font-face {
+  font-family: 'iconfont';  /* project id 1280489 */
+  src: url('//at.alicdn.com/t/font_1280489_zrpp056soyp.eot');
+  src: url('//at.alicdn.com/t/font_1280489_zrpp056soyp.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_1280489_zrpp056soyp.woff2') format('woff2'),
+  url('//at.alicdn.com/t/font_1280489_zrpp056soyp.woff') format('woff'),
+  url('//at.alicdn.com/t/font_1280489_zrpp056soyp.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_1280489_zrpp056soyp.svg#iconfont') format('svg');
+}
+.icon {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}

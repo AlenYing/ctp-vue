@@ -39,15 +39,7 @@
 </script>
 
 <style scoped>
-    @font-face {
-        font-family: 'iconfont';  /* project id 1280489 */
-        src: url('//at.alicdn.com/t/font_1280489_womsf1omoac.eot');
-        src: url('//at.alicdn.com/t/font_1280489_womsf1omoac.eot?#iefix') format('embedded-opentype'),
-        url('//at.alicdn.com/t/font_1280489_womsf1omoac.woff2') format('woff2'),
-        url('//at.alicdn.com/t/font_1280489_womsf1omoac.woff') format('woff'),
-        url('//at.alicdn.com/t/font_1280489_womsf1omoac.ttf') format('truetype'),
-        url('//at.alicdn.com/t/font_1280489_womsf1omoac.svg#iconfont') format('svg');
-    }
+
 
 
     main {
@@ -108,14 +100,7 @@
         padding-left: 13vw;
     }
 
-    .icon {
-        font-family: "iconfont" !important;
-        font-size: 16px;
-        font-style: normal;
-        -webkit-font-smoothing: antialiased;
-        -webkit-text-stroke-width: 0.2px;
-        -moz-osx-font-smoothing: grayscale;
-    }
+
 
     .input-icon {
         position: absolute;
